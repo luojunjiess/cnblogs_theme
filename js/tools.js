@@ -42,9 +42,9 @@ function myTools() {
                 });
                 break;
             case 'banner':
-                console.log('\n' + ' %c 菜花君 CNBlogs %c https://www.cnblogs.com/icaihua ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
-                console.log('\n' + ' %c 菜花君 GitHub %c https://github.com/Zhou-Hepeng ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
-                console.log('\n' + ' %c 菜花君 Email %c 512663864@qq.com ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c 菠萝瑶瑶 CNBlogs %c https://www.cnblogs.com/poloyy ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c 菠萝瑶瑶 GitHub %c https://github.com/luojunjiess ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c 菠萝瑶瑶 Email %c 837493986@qq.com ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
                 break;
 
             default:
