@@ -42,9 +42,9 @@ function myTools() {
                 });
                 break;
             case 'banner':
+				console.info("%c ", "background: url(https://images.cnblogs.com/cnblogs_com/miluluyo/1493340/o_a.gif) no-repeat center;padding-left:400px;padding-bottom: 160px;background-size:400px")
                 console.log('\n' + ' %c 菠萝瑶瑶 CNBlogs %c https://www.cnblogs.com/poloyy ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
-                console.log('\n' + ' %c 菠萝瑶瑶 GitHub %c https://github.com/luojunjiess ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
-                console.log('\n' + ' %c 菠萝瑶瑶 Email %c 837493986@qq.com ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+				
                 break;
 
             default:
