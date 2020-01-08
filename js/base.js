@@ -49,7 +49,7 @@ function Base() {
         $('#menuBlogAvatar').append("<img src='"+window.cnblogsConfig.blogAvatar+"'>");
 
         // 背景动画
-		if (window.cnblogsConfig.isBackgroundAnimation) require(['RibbonsEffect']);
+        if (window.cnblogsConfig.isBackgroundAnimation) require(['RibbonsEffect']);
 
         // 页面初始化
         ($('#topics').length > 0) ? caihuaJs.notHomeInit() : caihuaJs.homeInit();
@@ -96,7 +96,6 @@ function Base() {
         (function () {
             var re = /x/;
             var i = 0;
-            console.log(re);
 
             re.toString = function () {
                 return '欢迎访问本博客，这是您第 ' + (++i) + ' 次打开控制台。';
