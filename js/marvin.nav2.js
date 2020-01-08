@@ -45,8 +45,9 @@ a.ready(function () {
             if(text.length>26) text=text.substr(0,26)+"...";
 
             var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
-
-            j += '<li lin=""><a href="#' + u.attr('id') + '" title="' + title + '">' + (text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)) + '</a><span class="sideCatalog-dot"></span></li>';
+            _text = text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
+            _text = _text.replace('0.1','')
+            j += '<li lin=""><a href="#' + u.attr('id') + '" title="' + title + '">' + _text + '</a><span class="sideCatalog-dot"></span></li>';
         } else if (v.localName === 'h2') {
             m++;
             n = 0;
@@ -54,8 +55,9 @@ a.ready(function () {
                 if(text.length>30) text=text.substr(0,30)+"...";
 
                 var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
-
-                j += '<li class="h2Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + (text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)) + '</a></li>';
+                _text = text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
+                _text = _text.replace('0.1','')
+                j += '<li class="h2Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + _text + '</a></li>';
             }
         }
     });
