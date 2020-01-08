@@ -96,6 +96,7 @@ function Base() {
         (function () {
             var re = /x/;
             var i = 0;
+            console.log(re);
 
             re.toString = function () {
                 return '欢迎访问本博客，这是您第 ' + (++i) + ' 次打开控制台。';
@@ -574,10 +575,10 @@ function Base() {
     this.addFooter = function() {
         var pvHtml =  '<i class="iconfont icon-odps-data cnzz" style="position: relative;top: 2px;left: 3px;cursor: pointer;"></i>';
         // 请去 AmazingCounters.com 配置自己的，谢谢！！
-        pvHtml += '<span id="amazingStatSpan"><span id="amazingStat" style=""><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3244356&c=9733381" s="AmazingCounters.com" style="opacity: 0.5;margin-left: 7px;cursor: pointer;max-width: 72%;vertical-align: middle;height: 15px;margin-top: -2px;"></span></span>';
+        pvHtml += '<span id="amazingStatSpan"><span id="amazingStat" style=""><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3226342&c=9679339" s="AmazingCounters.com" style="opacity: 0.5;margin-left: 7px;cursor: pointer;max-width: 72%;vertical-align: middle;height: 15px;margin-top: -2px;"></span></span>';
         pvHtml += '<div>【'+window.cnblogsConfig.bottomText.left+'<span id="footerTextIcon">❤️</span>'+window.cnblogsConfig.bottomText.right+'】</div>';
-        pvHtml += '<div>【❤️ 愿每个从事测试的小伙伴都可以涨薪升职 ❤️】</div>';
-        pvHtml += "<div><span id='blogRunTimeSpan'></span><span class='my-face'>(o´ω`o)ﾉ</span></div>";
+        pvHtml += '<div>【❤️ 认清了生活的真相后还依然热爱它 ❤️】</div>';
+        pvHtml += "<div><span id='blogRunTimeSpan'></span><span class='my-face'>ღゝ◡╹)ノ♡</span></div>";
         pvHtml += '<div id="cnzzInfo"></div>';
         $('#footer').append(pvHtml).prepend('<div class="footer-image"></div>');
 
@@ -636,7 +637,7 @@ function Base() {
             $('#footer').prepend('<div class="footer-image"></div>');
             setInterval(function(){
                 var footer = $('#footer');
-                var themeHtml = '<p id="ThemeAuthors" style="color: #444;z-index: 999;">- Theme Authors：<a href="https://www.cnblogs.com/poloyy/" target="_blank" style="color:#444;">小可爱瑶瑶°</a> -</p></div>';
+                var themeHtml = '<p id="ThemeAuthors" style="color: #444;z-index: 999;">- Theme Authors：<a href="https://www.cnblogs.com/icaihua/" target="_blank" style="color:#444;">菜花君°</a> -</p></div>';
                 if ($('#ThemeAuthors').length == 0) {
                     $('#footer').append(themeHtml);
                 } else {
