@@ -43,7 +43,6 @@ a.ready(function () {
             l++;
             m = 0;
             if(text.length>26) text=text.substr(0,26)+"...";
-
             var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
             _text = text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
             _text = _text.replace(/^\./g,'')
@@ -53,11 +52,8 @@ a.ready(function () {
             n = 0;
             if(q){
                 if(text.length>30) text=text.substr(0,30)+"...";
- console.log("text"+text)
-                var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
-                 console.log("titleContent"+titleContent)
+                var titleContent = text.replace(/^\d*\|[0-9]+/g, '');
                 _text = text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
-                console.log("_text"+_text)
                 _text = _text.replace(/^\./g,'')
                 j += '<li class="h2Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + _text + '</a></li>';
             }
