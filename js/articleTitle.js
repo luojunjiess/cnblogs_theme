@@ -44,6 +44,7 @@ $(document).ready(function () {
             th2.text('');
             th2.addClass('header__dev');
             var their = th2.parents('.header__span').prevAll('.header__span[title-type="h1"]');
+            var th2Html = ""
             if (their.length > 0) {
                 their = $(their[0]);
                 var current  = their.find('.dev__fe i').text();
@@ -51,10 +52,11 @@ $(document).ready(function () {
                     num  = 0;
                 }
                 last = current;
+                th2Html += '<b class="dev__fe"><i>'+last+'</i></b>';
             } else {
-                num = 0;
+                num = num;
             }
-            var th2Html = '<b class="dev__fe"><i>'+last+'</i></b>';
+            
             th2Html += '<span class="dev__slash">|</span>';
             th2Html += '<b class="dev__ux"><i>'+(++num)+'</i></b>';
             th2Html += '<b class="dev__developer"><span class="dev__title">'+th2Text+'</span></b>';
