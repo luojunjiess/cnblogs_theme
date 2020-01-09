@@ -47,7 +47,7 @@ a.ready(function () {
             var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
             _text = text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
             _text = _text.replace('0.1','')
-            _text = _text.replace(/^\./g,'')
+            _text = _text.replace(/^\./g,'').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
             j += '<li lin=""><a href="#' + u.attr('id') + '" title="' + title + '">' + _text + '</a><span class="sideCatalog-dot"></span></li>';
         } else if (v.localName === 'h2') {
             m++;
@@ -58,7 +58,7 @@ a.ready(function () {
                 var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
                 _text = text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
                 _text = _text.replace('0.1','')
-                _text = _text.replace(/^\./g,'')
+                _text = _text.replace(/^\./g,'').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
                 j += '<li class="h2Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + _text + '</a></li>';
             }
         }
