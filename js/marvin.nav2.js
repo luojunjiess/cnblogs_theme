@@ -45,7 +45,7 @@ a.ready(function () {
             if(text.length>26) text=text.substr(0,26)+"...";
 
             var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
-            _text = text.replace('|', '.')
+            _text = text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
             _text = _text.replace('0.1','')
             _text = _text.replace(/^\./g,'')
             j += '<li lin=""><a href="#' + u.attr('id') + '" title="' + title + '">' + _text + '</a><span class="sideCatalog-dot"></span></li>';
@@ -56,7 +56,7 @@ a.ready(function () {
                 if(text.length>30) text=text.substr(0,30)+"...";
 
                 var titleContent = text.replace(/^\d+\|[0-9]+/g, '');
-                _text = text.replace('|', '.')
+                _text = text.replace('|', '.').replace(titleContent, '&nbsp;&nbsp;'+titleContent)
                 _text = _text.replace('0.1','')
                 _text = _text.replace(/^\./g,'')
                 j += '<li class="h2Offset"><a href="#' + u.attr('id') + '" title="' + title + '">' + _text + '</a></li>';
