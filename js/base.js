@@ -212,7 +212,9 @@ function Base() {
                 });
                 baguetteBox.run('.blogpost-body',{
                     buttons:'true',
-                    animation: 'fadeIn'
+                    animation: 'fadeIn',
+                    noScrollbars:'true',
+                    fullScreen:'true'
                 });
                 var $img = $('#baguetteBox-slider img')
                 $img.attr("onmousewheel","roll()")
