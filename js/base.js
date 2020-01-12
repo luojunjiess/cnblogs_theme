@@ -210,7 +210,11 @@ function Base() {
                         tem.wrap("<a class='lightbox' href='"+tem.attr('src')+"'></a>");
                     }
                 });
-                baguetteBox.run('.lightbox');
+                baguetteBox.run('.lightbox',{
+                    buttons:'true'
+                });
+                var $img = $('#baguetteBox-slider img')
+                $img.attr("onmousewheel","roll()")
             }
 
             // 初始化文章目录位置
