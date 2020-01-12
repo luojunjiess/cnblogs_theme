@@ -210,7 +210,7 @@ function Base() {
                         tem.wrap("<a class='lightbox' href='"+tem.attr('src')+"'></a>");
                     }
                 });
-                baguetteBox.run('.lightbox',{
+                baguetteBox.run('.blogpost-body',{
                     buttons:'true'
                 });
                 var $img = $('#baguetteBox-slider img')
